@@ -64,10 +64,33 @@ body.front {
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
   background-color: #fff;
+  color: #878787;
+  margin: 20px 0;
+}
+#language-switcher {
+  float: right;
+}
+#language-switcher ul {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  margin-top: 3em;
+  padding: 0;
 }
 .language-link {
   background-color: #fff;
 }
+
+#block-system-main-menu {
+  clear: both;
+}
+#block-system-main-menu > ul.menu {
+  padding: 0;
+}
+#block-system-main-menu li a.active {
+  color: #f00;
+}
+
 
 #site-name { /* The name of the website */
   margin: 0;
@@ -76,7 +99,7 @@ body.front {
 }
 #site-name a:link,
 #site-name a:visited {
-  color: #000;
+  color: #f50a41;
   text-decoration: none;
 }
 #site-name a:hover,
@@ -86,7 +109,8 @@ body.front {
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 1em;
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -216,6 +240,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-sidebar-first {
   background-color: #fff;
+  padding: 20px 16px;
 }
 
 /*

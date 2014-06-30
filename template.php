@@ -101,14 +101,31 @@ function ristat_preprocess_comment(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("region" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function ristat_preprocess_region(&$variables, $hook) {
+  if ($variables['region'] == 'sidebar_first') {
+    $switcher_block = locale_block_view(LANGUAGE_TYPE_INTERFACE);
+    $variables['language_switcher'] = $switcher_block['content'];
+    $variables['front_page'] = url();
+    $variables['logo'] = theme_get_setting('logo');
+    $variables['site_name'] = (theme_get_setting('toggle_name') ? filter_xss_admin(variable_get('site_name', 'Drupal')) : '');
+    $variables['site_slogan'] = (theme_get_setting('toggle_slogan') ? filter_xss_admin(variable_get('site_slogan', '')) : '');
+  }
   // Don't use Zen's region--sidebar.tpl.php template for sidebars.
   //if (strpos($variables['region'], 'sidebar_') === 0) {
   //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
   //}
 }
-// */
+
+function ristat_language_switch_links_alter(array &$links, $type, $path) {
+  foreach ($links as &$link) {
+    if ($link['language']->language == 'en') {
+      $link['title'] = 'Eng';
+    }
+    if ($link['language']->language == 'ru') {
+      $link['title'] = 'Рус';
+    }
+  }
+}
 
 /**
  * Override or insert variables into the block templates.
