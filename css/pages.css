@@ -64,7 +64,7 @@ body.front {
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
   background-color: #fff;
-  color: #878787;
+  color: #999999;
   margin: 20px 0;
 }
 #language-switcher {
@@ -88,7 +88,7 @@ body.front {
   padding: 0;
 }
 #block-system-main-menu li a.active {
-  color: #f00;
+  color: #ff0033;
 }
 
 
@@ -154,6 +154,10 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+}
+
+h1.title {
+  color: #FF0033;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -257,7 +261,9 @@ span.field-label { /* The inline field label used by the Fences module */
  * Footer
  */
 
-#footer {
+#footer p {
+  border-top: 1px solid #999999;
+  font-size: 0.8em;
 }
 
 /*

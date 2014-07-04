@@ -130,9 +130,9 @@ li a.active {
   text-decoration: underline;
 }
 .language-switcher-locale-url li.en a.language-link {
-  color: red;
+  color: #ff0033;
 }
 .language-switcher-locale-url li.ru a.language-link {
-  color: blue;
+  color: #3366FF;
 }
 
