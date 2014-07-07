@@ -216,9 +216,9 @@
   /* Span 1 column, starting in 1st column from left. */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 180px;
+    width: 220px;
     margin-left: 0%;
-    margin-right: -180px;
+    margin-right: -220px;
   }
 
   /**

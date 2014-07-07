@@ -71,10 +71,10 @@ body.front {
   float: right;
 }
 #language-switcher ul {
-  font-size: 0.8em;
-  line-height: 1.2em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 10px;
   margin-bottom: 0;
-  margin-top: 3em;
+  margin-top: 4em;
   padding: 0;
 }
 .language-link {
@@ -109,8 +109,6 @@ body.front {
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 0.8em;
-  line-height: 1.5em;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -158,6 +156,7 @@ h3.title { /* Comment title */
 
 h1.title {
   color: #FF0033;
+  margin-top: 0.75em;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -263,7 +262,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 #footer p {
   border-top: 1px solid #999999;
-  font-size: 0.8em;
+  font-size: 10px;
 }
 
 /*

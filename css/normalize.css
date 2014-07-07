@@ -100,22 +100,15 @@ audio:not([controls]) {
  *    `em` units.
  */
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif; /* 1 */
+  font-family: Arial, Helvetica, sans-serif; /* 1 */
 
-  /* Delete all but one of the following font-size declarations: */
-
-  /* Use a 12px base font size. 16px x 75% = 12px */
-  font-size: 75%; /* 3 */
-  /* Use a 14px base font size. 16px x .875 = 14px */
-  font-size: 87.5%; /* 3 */
-  /* Use a 16px base font size. */
-  font-size: 100%; /* 3 */
+  font-size: 12px;
 
   -ms-text-size-adjust: 100%;     /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 
   /* Establish a vertical rhythm. */
-  line-height: 1.5em;
+  line-height: 16px;
 }
 
 /* Address `font-family` inconsistency between `textarea` and other form elements. */
@@ -204,9 +197,8 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
-  font-size: 2em;
-  line-height: 1.5em; /* 3rem / 2em = 1.5em */
+  font-size: 21px;
+  line-height: 24px;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin-top: 0.75em; /* 1.5rem / 2em = .75em */
   margin-bottom: 0.75em;
@@ -553,3 +545,29 @@ table {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+
+
+
+table.rrtable {
+  border-spacing: 20px;
+  border: none;
+  line-height: 21px;
+}
+table.rrtable td {
+  border: none;
+  box-shadow: 6px 6px 3px #cccccc;  
+}
+table.rrtable thead td {
+  font-size: 10px;
+  color: #3366FF;
+}
+
+input.download {
+  border: none;
+  background: none;
+  font-size: 10px;
+  line-height: 21px;
+  box-shadow: 6px 6px 3px #cccccc;  
+}
+
+
