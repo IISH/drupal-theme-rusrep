@@ -159,6 +159,10 @@ h1.title {
   margin-top: 0.75em;
 }
 
+.front h1#page-title {
+  display: none;
+}
+
 tr.even { /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
