@@ -564,10 +564,12 @@ table.rrtable thead td {
 
 input.download {
   border: none;
-  background: none;
+  background: solid #fff url(../images/arrow-red.png) right center no-repeat;
+  padding-right: 16px;
   font-size: 10px;
   line-height: 21px;
-  box-shadow: 6px 6px 3px #cccccc;  
+  color: #3366ff;
+  text-transform: uppercase;
 }
 
 
