@@ -556,6 +556,7 @@ table.rrtable {
 table.rrtable td {
   border: none;
   box-shadow: 6px 6px 3px #cccccc;  
+  padding: 10px 0 0 10px;
 }
 table.rrtable thead td {
   font-size: 10px;
@@ -564,8 +565,8 @@ table.rrtable thead td {
 
 input.download {
   border: none;
-  background: solid #fff url(../images/arrow-red.png) right center no-repeat;
-  padding-right: 16px;
+  background: #fff url(../images/arrow-red.png) right center no-repeat;
+  padding-right: 18px;
   font-size: 10px;
   line-height: 21px;
   color: #3366ff;
