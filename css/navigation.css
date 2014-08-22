@@ -134,10 +134,10 @@ li a.active {
 .language-switcher-locale-url a.language-link:hover {
   text-decoration: underline;
 }
-.language-switcher-locale-url li.en a.language-link {
-  color: #ff0033;
-}
-.language-switcher-locale-url li.ru a.language-link {
+.language-switcher-locale-url li a.language-link {
   color: #3366FF;
+}
+.language-switcher-locale-url li.active a.language-link {
+  color: #ff0033;
 }
 
